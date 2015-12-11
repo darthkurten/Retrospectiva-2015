@@ -1,0 +1,206 @@
+/* ----------------------
+    Guilherme Kürten
+    10/12/2015
+
+-----------------------*/
+
+/* Geral */
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+
+    height: 100%;
+    margin: 0px;
+    font-size: 62.5%;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+}
+
+
+img,
+picture,
+video,
+embed {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5 p {
+
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+}
+
+
+@font-face {
+  font-family: 'avenirbold';
+  src: url('../fonts/AvenirLTStd-Black.woff'); /* IE9 Compat Modes */
+  src: url('../fonts/AvenirLTStd-Black.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */;
+   
+   
+}
+
+@font-face {
+
+    font-family: 'avenirlight';
+    src: url('../fonts/AvenirLTStd-Light.woff'); /* IE9 Compat Modes */
+    src: url('../fonts/AvenirLTStd-Light.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */;
+
+}
+
+@font-face {
+
+    font-family: 'garamond';
+    src: url('../fonts/AGaramondPro-Regular.woff'); /* IE9 Compat Modes */
+    src: url('../fonts/AGaramondPro-Regular.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */;
+}
+
+/* Fim do Geral */ 
+
+/* nav */ 
+
+nav {
+
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    
+}
+
+nav ul {
+
+    display: block;
+    list-style: none;
+    padding: 0;
+
+}
+
+nav ul li{
+
+    
+    display: inline-block;
+    margin: 0 0 0 1em;
+
+}
+
+nav ul li a {
+
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 50%;
+    border: solid 1pt;
+    width: 2em;
+    height: 2em;
+    line-height: 1.95em; 
+
+    font-family: 'avenirlight', sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #000;
+
+    opacity: 0.15;
+}
+
+
+
+    nav ul li a:hover {
+
+    border: solid 1pt #000;
+    background-color: #000;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+            transition: all 0.3s;
+    opacity: 1;
+
+}
+
+    .actived {
+
+        color: #a3a3a3;
+        background-color: #fff;
+
+        -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+                transition: all 0.3s;
+
+        opacity: 0.5;
+}
+
+/* Fim nav */ 
+
+/* Sections & Containers */ 
+
+section {
+
+    display: block;
+    margin: 0;
+
+
+}
+
+.container {
+    max-width: 36.45833333333333%; /* 700 / 1920 */
+    min-width: 700px;
+    margin: 0 auto;
+    height: 100%;
+    display: block;
+}
+
+/* Fim Sections & Containers*/
+
+/* Tipografia */
+
+h1  {
+
+    font-family: 'avenirbold';
+    font-size: 7em;
+    color: #000;
+    margin: 2em;
+    margin: 1em auto;
+    line-height: 1.1em;
+    letter-spacing: 0.03em;
+    float: left;
+}
+
+h2 {
+
+    font-family: 'avenirlight';
+    font-size: 2.6em;
+    color: #000;
+    position: absolute;
+    margin: 4.17em 0 0 14em;
+}
+
+p {
+
+ 
+    font-family: 'garamond';
+    font-size: 1.8em;
+    text-align: justify;
+    color: #000;
+    padding: 9em 0 0 20.1em;
+
+}
+
+    /* Span class */
+
+    .doismil {
+
+        float: right;
+    }
+
+    .titulo_retro {
+
+        display: block;
+        float: left;
+    }
